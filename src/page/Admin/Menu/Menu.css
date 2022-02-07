@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+.containerMenu {
+  background-color: #fff;
+  bottom: 0;
+  height: 100vh;
+  overflow-y: auto;
+ 
+  top: 0;
+  position: sticky;
+  transition: left 0.5s ease-out;
+  width: 300px;
+  z-index: 10;
+}
+.containerMenu .logoMenu img{
+    width: 200px;
+    height: auto;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+.menuC1 {
+  font-weight: 600;
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+.menuC1 .itemMenu,
+.menuTitle {
+  display: flex;
+  align-items: center;
+  font-family: Nunito;
+  color: #25396f;
+  padding: 5px 10px;
+}
+.menuC1 .itemMenu:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    background-color: #f0f1f5;
+
+}
+.menuC1 .itemMenu p {
+  padding: 10px;
+  margin-left: 1rem;
+}
+.menuC1 .itemMenu svg {
+  margin: 5px;
+  font-size: 20px;
+  color: #7c8db5; 
+}

@@ -1,0 +1,30 @@
+
+.container_container{
+    background:  rgb(242,247,255);
+    height: 100vh;
+    box-shadow: rgba(5, 109, 212, 0.2) 0px 8px 24px;
+}
+.btnProductLine{
+    width: 30px;
+    padding: 5px 10px;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 5px;
+    align-items: center;
+    cursor: pointer;  
+}
+.btnProductLine:last-child{
+    color: #FB6542;
+}
+.btnProductLine:nth-child(2) {
+    color: #FFBB00;
+}
+.btnProductLine:first-child{
+    color: #375E97
+}
+.btnProductLine:hover{
+  
+}

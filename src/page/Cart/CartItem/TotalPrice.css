@@ -1,0 +1,29 @@
+
+.totalPrice{
+    background-color: rgb(243,245,247);
+    padding: 10px;
+}
+.pricePrice{
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pricePrice:nth-child(2){
+    color: rgb(238,81,100)
+}
+.totalPriceSuccess{
+    font-size: 1.1rem;
+    color: #e95851;
+    padding: 4px 24px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.phiAvt{
+    font-size: 1.2rem;
+    color: #e95851;
+    padding: 4px 24px;
+    font-weight: bolder;
+}

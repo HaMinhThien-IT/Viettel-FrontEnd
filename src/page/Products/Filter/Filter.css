@@ -1,0 +1,41 @@
+.containerFilterC1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+}
+.containerFilterItem{
+  
+    background: #f5f5f5;
+    width: 100%;
+    height: 40px;
+    border-right: 1px solid #f5f5f5; 
+    padding-left: 15px;
+}
+.containerFilterItem{
+    display: flex;
+    align-items: center;   
+}
+.containerFilterItem .titleFilter .titleFilterH1{
+    line-height: 0px;
+    padding-left: 0px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666;
+    display: inline-block;
+}
+.containerFilterItem .itemFilter{
+    color: #288ad6;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    line-height: 40px;
+    font-size: 13px;
+}
+.itemFilter:hover{
+    cursor: pointer;
+}
+.selectOption{
+   padding: 10px;
+}

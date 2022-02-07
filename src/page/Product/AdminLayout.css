@@ -1,0 +1,6 @@
+.adminLayout{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 2fr 14fr ;
+   
+}

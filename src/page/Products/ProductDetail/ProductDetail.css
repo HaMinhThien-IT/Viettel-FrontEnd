@@ -1,0 +1,59 @@
+.containerDetail{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1.8fr 2fr 1.5fr;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+.isBoxProductDetailItem{
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: max-content;
+}
+.titleHeaderBoxItem {
+    line-height: 20px;
+    font-weight: 700;
+    padding: 5px;
+}
+.itemHeaderBoxItem svg{  
+    color: rgb(241,107,44);
+    margin-right: 5px;
+}
+.headerIsBox{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.headerBottom{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.addressShop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #337ab7;
+    background: #fff;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+.addressShop svg{
+    margin-right: 5px;
+    font-size: 20px;
+    color: rgb(241,107,44);
+}
+.addressShop:hover{
+    color: #fff;
+    background: #ff7914;
+    background: linear-gradient(#ff9d14, #ff5214);
+    -webkit-box-shadow: 0px 0px 7px 0.5px rgb(0 0 0 / 30%);
+    -moz-box-shadow: 0px 0px 7px 0.5px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 7px 0.5px rgb(0 0 0 / 30%);
+}
+.addressShop svg:hover{
+    color: #fff;
+}

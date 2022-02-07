@@ -1,0 +1,70 @@
+img{
+    width: 100%;
+}
+body{
+    font-family: Arial;
+}
+:link{
+    text-decoration: none;
+}
+.productController{
+
+    border: #dfdfdf solid 1px;
+    float: left;
+    clear: right;
+    padding: 10px;
+    position: relative;
+    height: 370px;
+    overflow: hidden;
+    width: 20%;
+   
+}
+.productController .topSale{
+    background-color: rgb(90,179,100);
+    position: relative;
+    width: 90px;
+    height: auto;
+    padding: 3px 1px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+.productController .imgProduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productController .imgProduct img{
+  max-width: 200px;
+  max-height: 200px;
+  text-align: center;
+}
+.productController .productName{
+    padding: 0;
+    margin: 0;
+    color: #1f1f1d;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    font-weight: bold;
+}
+.productController .priceProduct{
+    color: #f83015;
+    font-size: 16px;
+    height: 20px;
+    font-weight: 600;
+}
+.productController .km{
+    color: #747474;
+    font-size: 12px;
+    margin-top: 5px;
+
+}
+.productController:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

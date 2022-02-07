@@ -1,0 +1,56 @@
+.fromLogin{
+    max-width: 430px;
+    margin:30px auto;
+}
+.fromLogin h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.containerLoginForm{
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.containerLoginForm input{
+    display: block;
+    background-color: transparent;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    color: #000;
+    font-weight: 400;
+    padding: 13px;
+    width: 100%;
+    margin-top: 10px;
+}
+.containerLoginForm input:focus{
+   outline: 1px solid black;
+}
+.containerLoginForm button{
+    width: 100%;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 3px;
+    height: 53px;
+    line-height: 53px;
+    background-color: rgb(238,73,55);
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.containerLoginForm .titleLogin {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 25px;
+    margin-top: 10px;
+}
+.containerLoginForm .gotoLogin{
+    transition: 0.5s;
+    color: #0066cc;
+    text-decoration: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}

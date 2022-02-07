@@ -1,0 +1,232 @@
+.titleCart h3{
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 13px;
+    margin-top: 10px;
+    color: #212529;
+    line-height: 24px;
+}
+.optionPaymentAddress{
+    display: grid;
+    grid-gap: 17px;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+.payMentAtHome{
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    outline: none;
+    background: none;
+}
+.payMentAtHomeActive{
+    border: 1px solid red;
+    color: red;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    outline: none;
+    background: none;
+}
+
+.payMentAtAddress{
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    outline: none;
+    background: none;
+}
+.payMentAtAddressActive{
+    border: 1px solid red;
+    color: red;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    outline: none;
+    background: none;
+}
+
+.optionPaymentAddress img{
+   max-width: 50px;
+   max-height: 50px;
+   margin-right: 10px;
+}
+.optionPaymentAddress .atHomeImg{
+    height: 33px;
+}
+.payment{
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    margin-top: 10px;
+    color: #212529;
+    line-height: 24px;
+}
+.titleCart h4{
+    line-height: 19px;
+    color: #686868;
+    font-size: 16px;
+    font-weight: 400;
+}
+.titleCart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.titleCart span{
+    color: #3a7cbd;
+    line-height: 19px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.labelInput{
+    font-size: 14px;
+    color: #777;
+    position: absolute;
+    top: 0;
+    background: #fff;
+    padding: 3px 10px 3px 4px;
+    left: 10px;
+}
+.inputCart{
+    font-size: 15px;
+    padding: 5px 10px;
+    letter-spacing: .5px;
+}
+.input-wrapper{
+    flex: 1;
+    position: relative;
+    margin-top: 10px;
+}
+.input-wrapper textarea{
+    border: 1px solid #ced4da;
+    padding: 25px 10px;
+    width: 99.3%;
+    height: 100px;
+}
+.input-wrapper textarea:focus{
+    outline: none;
+    border: 1px solid #ddd; 
+}
+.input-wrapper__label{
+    font-size: 14px;
+    color: #777;
+    position: absolute;
+    top: 0;
+    background: #fff;
+    padding: 3px 10px 3px 4px;
+    left: 10px;
+}
+.containerFromCart .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: black !important;
+}
+ .containerFromCart .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 10px 15px  !important;
+}
+.containerFromCart .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border: 1px solid #ced4da !important;
+    border-width: 2px;
+}
+.confirm{
+    display: flex;
+    align-items: center;
+}
+.confirm strong{
+    color: red;
+}
+.containerPay{
+   display: flex;
+   align-items: center;
+}
+.payCart{
+    margin-bottom: 30px;
+}
+.optionPay{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    border-radius: 3px;
+    width: 439px;
+}
+.imgOptionPay{ 
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 50%;
+    min-width: 50px;
+    min-height: 50px;   
+   
+}
+.optionPay:first-child{ 
+   margin-left: 0px;  
+}
+.formControlPay img{
+    min-width: 20px;
+    min-height: 20px; 
+}
+.optionPay input[type='radio'] {
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirmPaymentItem{
+    margin-top: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+.confirmPayMent .toiDogy{
+    text-decoration: underline;
+}
+.confirmPayMent strong{
+    font-weight: 400;
+    color: red;
+}
+.btnPayMent{
+    background-color: red;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 17px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.titleLocation svg{
+    color: red;
+    margin-right: 5px;
+    font-size: 20px;
+}
+.titleLocation{
+    color: red;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+.locationItems{
+    padding: 5px 10px;
+}

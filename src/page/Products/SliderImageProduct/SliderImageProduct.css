@@ -1,0 +1,11 @@
+.carousel .thumb.selected, .carousel .thumb:hover{
+   border: 1px solid #ddd !important;
+}
+.carousel-root{
+   width: 434px;
+   height: auto;
+}
+.withSlider{
+   width: 435px;
+   height: auto;
+}

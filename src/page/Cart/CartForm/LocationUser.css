@@ -1,0 +1,8 @@
+.containerLocation{
+    display: flex;
+    align-items: center;
+   
+}
+.nameAndSdt{
+    margin-right: 10px;
+}

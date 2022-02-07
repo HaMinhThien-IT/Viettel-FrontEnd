@@ -1,0 +1,27 @@
+.containerHeaderMenu{
+    background-color: rgb(238,75,72);
+    color: white;
+    
+}
+.headerMenuItem{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+}
+.itemMenuHeader{
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.itemMenuHeader svg{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.itemMenuHeader:hover{
+    cursor: pointer;
+}
+.headerMenuItem .itemMenuHeader{
+    padding: 0px 10px;
+}
