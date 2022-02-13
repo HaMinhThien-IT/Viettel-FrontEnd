@@ -1,0 +1,12 @@
+.addToCartItem strong{
+    font-size: 14px;
+    font-weight: 700;
+}
+.addToCartItem{
+    background: #277cea;
+    border: solid 1px #1d72e0;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}

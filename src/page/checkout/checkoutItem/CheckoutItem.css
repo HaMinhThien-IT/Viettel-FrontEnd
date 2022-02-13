@@ -1,0 +1,146 @@
+.likeCheckout{
+    background: rgb(238,77,45);
+    padding: 3px;
+    color: white;
+    border-radius: 2px;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.checkoutItems{
+    padding: 18px;
+    background-color: rgb(255,255,255);
+    border-radius: 3px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 10px;
+}
+.chatCheckout svg{
+    width: 11px;
+    height: 11px;
+}   
+.viewShop svg{
+    width: 11px;
+    height: 11px;
+}
+.infoItemCheckout{
+    margin-top: -40px;
+}
+.brandCheckout{
+    font-weight: 700;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.headerCheckoutItemLeft{
+    display: flex;
+    align-items: center;
+}
+.headerCheckoutItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom:1px solid #ddd;
+}
+.chatCheckout {
+    background: rgb(238,77,45);
+    padding: 5px;
+    color: white;
+    border-radius: 2px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.chatCheckout svg{
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}
+.driveCheckout{
+    text-decoration: none;
+    color: rgba(0,0,0,.87);
+    color: #26aa99;
+    vertical-align: middle;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  
+}
+.viewShop{
+    cursor: pointer;
+    font-size: 15px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    color: rgb(66, 65, 65);
+}
+.viewShop svg{
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    color: rgb(212,212,212);
+}
+.driveCheckout svg{
+    vertical-align: middle;
+    color: #00bfa5;
+    stroke: #26aa99;
+    width: 27px;
+    height: 17px;
+}
+.headerCheckoutRight{
+    display: flex;
+    align-items: center;
+}
+
+.timeOrderCheckout{
+    margin-left: 10px;
+    border-left: 1px solid #ddd;
+    line-height: 24px;
+    color: #ee4d2d;
+    text-align: right;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding-left: 10px;
+}
+.imgItemCheckout img{
+    width: 110px;
+    height: 110px;
+}
+.productType{
+    color: rgba(0,0,0,.54);
+    padding: 5px 0px;
+}
+.checkoutItemsMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.daddyItemCheckout{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkoutItemsFooter{
+    padding: 10px 0px;
+}
+.totalPriceCheckoutItemFooter{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.totalPriceCheckoutItemFooter svg{
+    margin-right: 10px;
+}
+.totalPriceCheckoutItemFooter .totalPriceReal{
+    color: #ee4d2d;
+    font-size: 24px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+.totalPriceTitle{
+    display: flex;
+    align-items: center;
+}

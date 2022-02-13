@@ -5,7 +5,31 @@ export default function Brand() {
         <div className='container'>
             <div className="brandContainer">
                 <div className="brandItem">
-                    <img src="https://f4.photo.talk.zdn.vn/654805495561500272/8f07bdf9badf77812ece.jpg" alt="" />
+                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
+                </div>
+                <div className="brandItem">
+                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
+                </div>
+                <div className="brandItem">
+                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
+                </div>
+                <div className="brandItem">
+                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
+                </div>
+                <div className="brandItem">
+                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
+                </div>
+                <div className="brandItem">
+                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
+                </div>
+                <div className="brandItem">
+                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
+                </div>
+                <div className="brandItem">
+                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
+                </div>
+                <div className="brandItem">
+                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
                 </div>
             </div>
         </div>

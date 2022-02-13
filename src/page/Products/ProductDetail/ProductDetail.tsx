@@ -25,10 +25,11 @@ export default function ProductDetail() {
         )
     }, [product_id])
     const addToCart = (cartModel: CartModel) => {
-     
         orderController.addToCart(id_order,cartModel);
     }
     return (
+        <>
+       
         <div className='container'>
             <div className="containerDetail">
                 <div>
@@ -59,5 +60,7 @@ export default function ProductDetail() {
             </div>
             </div>
         </div>
+        
+        </>
     )
 }

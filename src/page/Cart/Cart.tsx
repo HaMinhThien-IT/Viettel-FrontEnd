@@ -37,26 +37,26 @@ export default function Cart() {
       sdt: '',
     }, statePayMent: true
   })
-  const sendDataCheckOut = (order_user: order_user,optionChecked: boolean,optionCheckAddress: boolean) => {
-    setState({ ...state, optionChecked:optionChecked,optionCheckAddress:optionCheckAddress }) 
-    orderController.checkOut(order_user, user_id, order_user_id, state.statePayMent,id_order)
-  }
+
 
   useEffect(() => {
     if (!state.optionChecked && !state.optionCheckAddress) {
       setState({ ...state, statePayMent: true })
-    } else if (state.optionChecked && !state.optionCheckAddress ) {
+    } else if (state.optionChecked && !state.optionCheckAddress) {
       setState({ ...state, statePayMent: false })
     }
-  }, [state.optionChecked,state.optionCheckAddress])
-
+  }, [state.optionChecked, state.optionCheckAddress])
+  const sendDataCheckOut = (order_user: order_user, optionChecked: boolean, optionCheckAddress: boolean) => {
+    setState({ ...state, optionChecked: optionChecked, optionCheckAddress: optionCheckAddress })
+    orderController.checkOut(order_user, user_id, order_user_id, state.statePayMent, id_order)
+  }
   return <div className='containerCart1'>
-    <CartForm  sendDataCheckOut={sendDataCheckOut}/>
+    <CartForm sendDataCheckOut={sendDataCheckOut} />
     <div>
       <div className="titleCartItem">
         Giỏ hàng của bạn
       </div>
-      {   
+      {
         listCart && listCart.map((item, index) => (
           <CartItem itemCart={item} key={index} />
         ))

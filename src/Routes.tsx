@@ -10,6 +10,7 @@ import Container from './page/Admin/TableProductLine/TableProductLine';
 import Login from './page/Auth/Login/Login';
 import Register from './page/Auth/Register/Register';
 import Cart from './page/Cart/Cart';
+import ListCheckout from './page/checkout/ListCheckout';
 
 import ClientLayout from './page/ClientLayout/ClientLayout';
 import AdminLayout from './page/Product/AdminLayout';
@@ -60,6 +61,12 @@ export default function RoutesComponent() {
                 <Route path='/cart' element={
                     <ClientLayout>
                         <Cart />   
+                    </ClientLayout>
+                }>
+                </Route>
+                <Route path='/checkout' element={
+                    <ClientLayout>
+                        <ListCheckout />   
                     </ClientLayout>
                 }>
                 </Route>

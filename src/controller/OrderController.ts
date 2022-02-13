@@ -16,9 +16,12 @@ class OrderController {
         return axios.post(`${localHost}/addToCart`,{id_order,addToCartModel})
     }
     checkOut(checkoutUser: order_user,user_id:string,order_user_id:string,statePayMent:boolean,id_order:string){
-        console.log(checkoutUser);
-        
         return axios.post(`${localHost}/checkout`,{checkoutUser,user_id,order_user_id,statePayMent,id_order})
+    }
+    listCheckout(user_id:string, pageSize: number, page: number){
+        return axios.post(`${localHost}/listCheckout`,{user_id,pageSize,page}).then(res =>{
+            return res.data
+        })
     }
    
 

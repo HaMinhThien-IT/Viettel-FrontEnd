@@ -1,3 +1,5 @@
+import { ProductLine, Products } from "./Product";
+
 export interface Cart{
     product_id : string,
 	product_color_id :number,
@@ -16,7 +18,7 @@ export interface listCartItem{
 	price :number ,
 	color:string,
 	ram:string
-	quantity :number,
+	quantity_order :number,
 	image : string,
 	name_trademark :string
 }
@@ -25,4 +27,15 @@ export interface CartModel{
 	productsid:string,
 	quantity:number, 
 	price:number
+}export interface Products2 extends Products{
+	color : string,
+	ram : string
+}
+export interface CartModels{
+	id_order:string,
+	productsid:string,
+	quantity:number, 
+	price:number,
+	productLine?:ProductLine,
+	products?:Products2
 }

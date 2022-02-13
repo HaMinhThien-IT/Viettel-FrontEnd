@@ -19,7 +19,7 @@ const cartDefault: nameContextDefault = {
         price: 0,
         color: '',
         ram: '',
-        quantity: 0,
+        quantity_order: 0,
         image: '',
         name_trademark:''
     }],

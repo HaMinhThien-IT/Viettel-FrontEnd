@@ -65,6 +65,11 @@ class ProductController {
             return res.data
         })
     }
+    getListProductTiki (){
+        return axios.get(`https://tiki.vn/api/v2/products?limit=48&include=advertisement&aggregations=2&trackity_id=69be7678-e4fe-e9ff-295b-d7df7a54a6e7&q=%C4%91i%E1%BB%87n+tho%E1%BA%A1i&brand=18802`).then(res =>{
+            return res.data
+        })
+    }
 
 }
 export const productController = new ProductController();

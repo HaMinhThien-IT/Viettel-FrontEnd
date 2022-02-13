@@ -1,0 +1,74 @@
+img{
+    width: 100%;
+}
+.checkoutLayout{
+    background-color: rgb(245,245,245);
+}
+.infoCheckoutDaddy{
+    display: flex;
+    align-items: center;
+}
+.checkoutDad{
+    padding: 15px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 5fr ;
+}
+.infoCheckout{
+    border-bottom: 1px solid #ddd;
+}
+.editInfo{
+    margin-bottom: 10px;
+}
+.menuCheckoutChildIcon:first-child{
+    margin-top: 20px;
+}
+.editInfo{
+    text-align: center;
+    color: #888;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.nameUserCheckout{
+    padding: 10px;
+}
+.nameUserCheckout .nameUser{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+.infoCheckoutDaddy .imgUser img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+.menuCheckoutChildIcon{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.menuCheckoutChildIcon img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.paginationListCheckout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.menuCheckoutChildIcon .MuiListItemButton-root{
+    padding: 0 !important;
+}
+.menuCheckoutChildIcon .css-h4y409-MuiList-root{
+    padding: 0 !important;
+}
+.containerListCheckOutDad {
+    min-height: 600px;
+}

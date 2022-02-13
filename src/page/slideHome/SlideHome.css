@@ -1,0 +1,10 @@
+.img{
+    width: 100%;
+}
+.imageSlide img{
+    height:180px;  
+}
+.containerSlide{ 
+    margin-top: 15px;
+    margin-bottom: 5px;
+}

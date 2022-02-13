@@ -1,5 +1,18 @@
-.labelOption{   
-    text-align: center;
-    cursor: pointer;
-   
+
+.nameOption{
+    color: #444444;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.priceOption{
+    color: #444444;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 200;
+}
+.btnOp{
+    border: none;
+    outline: none;
+    background: none;
 }

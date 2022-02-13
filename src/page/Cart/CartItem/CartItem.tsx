@@ -28,7 +28,7 @@ export default function CartItem(props:props) {
                     </div>
                     <div className="updateQuantityProductCart">
                         <button className="updateQuantity">-</button>
-                        <button className="quantity">{props.itemCart.quantity}</button>
+                        <button className="quantity">{props.itemCart.quantity_order}</button>
                         <button className="updateQuantity">+</button>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ export default function CartItem(props:props) {
                     Tạm tính
                     </p>
                     <div className="prices">
-                    {formatMoney(props.itemCart.price*props.itemCart.quantity)}đ
+                    {formatMoney(props.itemCart.price*props.itemCart.quantity_order)}đ
                     </div>
                 </div>
                 <div className="pricePrice">

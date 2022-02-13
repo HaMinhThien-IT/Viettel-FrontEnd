@@ -1,0 +1,17 @@
+.brandItem img{
+    width: 107px;
+    height: 16px;
+   
+}
+.brandItem{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.brandContainer{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 5px 0;
+}

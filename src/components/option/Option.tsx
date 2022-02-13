@@ -2,22 +2,25 @@ import React from 'react'
 import { formatMoney } from '../../helper'
 import './Option.css'
 type props = {
-    name : string,
-    ram:string,
-    price:number
+    name: string,
+    ram: string,
+    price: number,
+    id: number,
+    getValue: (id: number) => void
+
 }
-export default function Option(props:props) {
+export default function Option(props: props) {
     return (
-        <div className='labelOption'>
+        <>
+        <button className='btnOp' value={props.id} onClick={() => props.getValue(props.id)}>
             <div className="nameOption">
-                {props.name}
-            </div>
-            <div className='ramOption'>
-                {props.ram}
+                <strong>{props.ram}B</strong>
             </div>
             <div className='priceOption'>
-                {formatMoney(props.price)}
+                {formatMoney(props.price)}đ
             </div>
-        </div>
+        </button>
+        </>
+
     )
 }
