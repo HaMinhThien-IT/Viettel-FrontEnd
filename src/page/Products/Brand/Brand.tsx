@@ -1,37 +1,19 @@
-import React from 'react'
-import './Brand.css'
-export default function Brand() {
-    return (
-        <div className='container'>
-            <div className="brandContainer">
-                <div className="brandItem">
-                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
-                </div>
-                <div className="brandItem">
-                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
-                </div>
-                <div className="brandItem">
-                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
-                </div>
-                <div className="brandItem">
-                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
-                </div>
-                <div className="brandItem">
-                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
-                </div>
-                <div className="brandItem">
-                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
-                </div>
-                <div className="brandItem">
-                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
-                </div>
-                <div className="brandItem">
-                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
-                </div>
-                <div className="brandItem">
-                    <img src="https://cellphones.com.vn/media/icons/brands/brand-211.svg" alt="" />
-                </div>
-            </div>
-        </div>
-    )
+import React from "react";
+import { brand } from "../../../model/Option";
+import "./Brand.css";
+type props = {
+  value: brand[];
+};
+export default function Brand(props: props) {
+  return (
+    <div className="container">
+      <div className="brandContainer">
+        {props.value.map((item, index) => (
+          <button value={item.trademark_id} className="brandItem">
+            <img src={item.image_trademark} alt="" />
+          </button>
+        ))}
+      </div>
+    </div>
+  );
 }

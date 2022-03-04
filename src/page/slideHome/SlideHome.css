@@ -1,10 +1,10 @@
-.img{
-    width: 100%;
+.img {
+  width: 100%;
 }
-.imageSlide img{
-    height:180px;  
+.imageSlide img {
+  height: 140px;
 }
-.containerSlide{ 
-    margin-top: 15px;
-    margin-bottom: 5px;
+.containerSlide {
+  margin-top: 15px;
+  margin-bottom: 5px;
 }

@@ -23,6 +23,14 @@ class OrderController {
             return res.data
         })
     }
+    listCheckoutAdmin(){
+        return axios.get(`${localHost}/listCheckoutAdmin`).then((res)=>{
+            return res.data
+        })
+    }
+    updateStatusOrder(id_oder:string,email:string,nameUser:string) {
+        return axios.post(`${localHost}/status`,{id_oder,email,nameUser})
+    }
    
 
 }

@@ -46,3 +46,20 @@
   font-size: 20px;
   color: #7c8db5; 
 }
+
+.itemMenuActive {
+  display: flex;
+  align-items: center;
+  font-family: Nunito;
+  color: red;
+  padding: 5px 10px;
+}
+.menuC1 .itemMenuActive p {
+  padding: 10px;
+  margin-left: 1rem;
+}
+.menuC1 .itemMenuActive svg {
+  margin: 5px;
+  font-size: 20px;
+  color: #7c8db5; 
+}

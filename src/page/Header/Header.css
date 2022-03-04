@@ -1,72 +1,76 @@
-.containerHeader{
-    background: #ee0033;
-    border-bottom: none;
+.containerHeader {
+  background: #ee0033;
+  border-bottom: none;
+  padding: 5px;
 }
-.containerTop{
-    padding: 5px;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 5fr 9fr 3fr 1fr ;
-
+.containerTop {
+  padding: 5px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 5fr 9fr 4fr 1fr;
 }
-.containerTop .logo img{
-    max-width: 100%;
-    width: 200px;
-    height: auto;
+.containerTop .logo img {
+  max-width: 100%;
+  width: 200px;
+  height: auto;
 }
 .inputSearch {
-    display: flex;
-    align-items: center;
-    background: white;
-    justify-content: space-between;
-    padding: 0px 10px;
-    border-radius: 20px;
+  display: flex;
+  align-items: center;
+  background: white;
+  justify-content: space-between;
+  padding: 0px 10px;
+  border-radius: 20px;
 }
-.inputSearch input{
-    border: none;
-    outline: none;
+.inputSearch input {
+  border: none;
+  outline: none;
 }
-.inputSearch svg{
-    color: red;
-    font-size: 30px;
+.inputSearch svg {
+  color: red;
+  font-size: 30px;
 }
-.location{
-    display: flex;
-    align-items: center;
+.location {
+  display: flex;
+  align-items: center;
 }
-.login{
-    margin-right: 5px;
+.login {
+  margin-right: 5px;
 }
-.location svg{
-    color: white;
-    font-size: 25px;
-    margin-right: 2px;
+.location svg {
+  color: white;
+  font-size: 25px;
+  margin-right: 2px;
 }
-.location span{
-    color: white;
-    font-weight: 500;
+.location span {
+  color: white;
+  font-weight: 500;
 }
-.location:hover{
-    cursor: pointer;
+.location:hover {
+  cursor: pointer;
 }
-.cartHeader{
-    display: flex;
-    align-items: center;
-    color: red;
-    background: white;
-    width: 140px;
-    border-radius: 25px;
-    padding: 0px 10px;
-    justify-content: center;
+.cartHeader {
+  display: flex;
+  align-items: center;
+  color: red;
+  background: white;
+  width: 140px;
+  border-radius: 25px;
+  padding: 0px 10px;
+  justify-content: center;
 }
-.cartHeader:hover{
-    cursor: pointer;
+.iconCart {
+  display: flex;
+  align-items: center;
+}
+.cartHeader:hover {
+  cursor: pointer;
 }
 
-.cartHeader svg{
-    margin-right: 5px;
+.cartHeader svg {
+  margin-right: 5px;
 }
-.location :link{
-    display: flex;
-    align-items: center;
+.location :link {
+  display: flex;
+  align-items: center;
 }

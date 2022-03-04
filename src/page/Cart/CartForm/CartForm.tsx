@@ -1,5 +1,5 @@
-import {TextField } from '@mui/material';
-import React, { useState } from 'react';
+import { TextField } from '@mui/material';
+import React, { useContext, useState } from 'react';
 import './CartForm.css'
 import { pink } from '@mui/material/colors';
 import Checkbox from '@mui/material/Checkbox';
@@ -12,25 +12,28 @@ import { AiOutlineArrowRight } from 'react-icons/ai';
 import { HiLocationMarker } from 'react-icons/hi';
 import LocationUser from './LocationUser';
 import { order_user } from '../../../model/Checkout';
+import { Link } from 'react-router-dom';
 
 
 
 type State = {
   optionChecked: boolean,
   optionCheckAddress: boolean,
-  order_user:order_user
+  order_user: order_user
 }
 type props = {
-  sendDataCheckOut: (order_user:order_user,optionChecked:boolean,optionCheckAddress:boolean) => void,
+  sendDataCheckOut: (order_user: order_user, optionChecked: boolean, optionCheckAddress: boolean) => void,
 }
-export default function CartForm(props:props) {
+export default function CartForm(props: props) {
 
-  const [state, setState] = useState<State>({ optionChecked: false, optionCheckAddress: true ,order_user:{
-    order_user_id:'',
-    name_order:'',
-    address:'',
-    sdt:'',
-  }})
+  const [state, setState] = useState<State>({
+    optionChecked: false, optionCheckAddress: true, order_user: {
+      order_user_id: '',
+      name_order: '',
+      address: '',
+      sdt: '',
+    }
+  })
   const handleActive = () => {
     setState({ ...state, optionChecked: false, optionCheckAddress: true })
   }
@@ -39,6 +42,7 @@ export default function CartForm(props:props) {
   }
 
   const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
   return (
     <div className='containerFromCart' >
       <div className="titleCart">
@@ -64,7 +68,7 @@ export default function CartForm(props:props) {
               id="outlined-required"
               label="Họ"
               focused
-              onChange={e =>{setState({...state,order_user:{...state.order_user,name_order:e.target.value}})}}
+              onChange={e => { setState({ ...state, order_user: { ...state.order_user, name_order: e.target.value } }) }}
             />
             <TextField sx={{ m: 1, width: '72.9ch' }}
               required
@@ -77,14 +81,14 @@ export default function CartForm(props:props) {
               id="outlined-required"
               label="Số điện thoại"
               focused
-              onChange={e =>{setState({...state,order_user:{...state.order_user,sdt:e.target.value}})}}
+              onChange={e => { setState({ ...state, order_user: { ...state.order_user, sdt: e.target.value } }) }}
             />
             <TextField sx={{ m: 1, width: '72.9ch' }}
               required
               id="outlined-required"
               label="Địa chỉ"
               focused
-              onChange={e =>{setState({...state,order_user:{...state.order_user,address:e.target.value}})}}
+              onChange={e => { setState({ ...state, order_user: { ...state.order_user, address: e.target.value } }) }}
             />
           </div>
           <div className="confirm">
@@ -112,16 +116,16 @@ export default function CartForm(props:props) {
         !state.optionCheckAddress && state.optionChecked && (
           <>
             <FormControl>
-            <div className="titleLocation">
-              <HiLocationMarker/> Địa Chỉ Nhận Hàng
-            </div>
+              <div className="titleLocation">
+                <HiLocationMarker /> Địa Chỉ Nhận Hàng
+              </div>
               <RadioGroup className="locationItems"
                 row
                 aria-labelledby="demo-form-control-label-placement"
                 name="position"
                 defaultValue="top"
               >
-                <FormControlLabel  value="end" control={<Radio />} label={<LocationUser/>} />
+                <FormControlLabel value="end" control={<Radio />} label={<LocationUser />} />
               </RadioGroup>
             </FormControl>
           </>
@@ -205,9 +209,11 @@ export default function CartForm(props:props) {
             Yêu cầu xuất hoá đơn GTGT cho đơn hàng này</span>
         </div>
       </div>
-      <button value={"hi"} className="btnPayMent" onClick={()=>{props.sendDataCheckOut(state.order_user,state.optionChecked,state.optionCheckAddress)}}>
-        THANH TOÁN <AiOutlineArrowRight />
-      </button>
+      <Link to='/checkout'>
+        <button value={"hi"} className="btnPayMent" onClick={() => { props.sendDataCheckOut(state.order_user, state.optionChecked, state.optionCheckAddress) }}>
+          THANH TOÁN <AiOutlineArrowRight />
+        </button>
+      </Link>
     </div>
   )
 }

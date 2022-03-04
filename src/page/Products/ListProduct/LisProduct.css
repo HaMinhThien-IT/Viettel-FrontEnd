@@ -1,4 +1,8 @@
-
-.fixPagination{
-    min-height: 700px;
+.fixPagination {
+  min-height: 700px;
+}
+.containerListProduct {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }

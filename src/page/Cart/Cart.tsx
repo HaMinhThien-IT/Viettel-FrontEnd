@@ -7,6 +7,7 @@ import TotalPrice from './CartItem/TotalPrice';
 import { order_user } from '../../model/Checkout';
 import { orderController } from '../../controller/OrderController';
 import { userContext } from '../../store/UserContext';
+import { toast } from 'react-toastify';
 type State = {
   optionChecked: boolean,
   optionCheckAddress: boolean,
@@ -16,10 +17,9 @@ type State = {
 export default function Cart() {
   const { listCart } = useContext(cartContext)
   const { order_user_id } = useContext(cartContext)
-  const { id_order } = useContext(cartContext)
+  const { id_order, onListCart } = useContext(cartContext)
   const { user_id } = useContext(userContext)
   let totalPrice: number = 0;
-
   // useEffect(()=>{
   //   if(listCart != null){
   //     for (let i = 0; i < listCart.length || 1; i++) {
@@ -48,7 +48,13 @@ export default function Cart() {
   }, [state.optionChecked, state.optionCheckAddress])
   const sendDataCheckOut = (order_user: order_user, optionChecked: boolean, optionCheckAddress: boolean) => {
     setState({ ...state, optionChecked: optionChecked, optionCheckAddress: optionCheckAddress })
-    orderController.checkOut(order_user, user_id, order_user_id, state.statePayMent, id_order)
+    orderController.checkOut(order_user, user_id, order_user_id, state.statePayMent, id_order).then(() => {
+      onListCart()
+      toast.success("Thanh toán thành công ! ", {
+        position: "bottom-left",
+        autoClose: 3000
+      })
+    })
   }
   return <div className='containerCart1'>
     <CartForm sendDataCheckOut={sendDataCheckOut} />

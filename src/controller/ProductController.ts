@@ -25,6 +25,13 @@ class ProductController {
             return res.data
         })
     }
+    getRelatedProducts(trademark_id:string){
+        console.log(trademark_id);
+        
+        return axios.post(`${localHost}/relatedProducts`,{trademark_id}).then(res =>{
+            return res.data
+        })
+    }
     getColorProduct(){
         return axios.get(`${localHost}/color`).then(res =>{
             return res.data
