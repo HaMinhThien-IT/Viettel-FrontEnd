@@ -30,7 +30,7 @@ export default function LisProduct() {
     let brands: brand[] = [];
     brandController.getListBrand().then((res) => {
       brands = res;
-      productController.listProduct(1, 25, "", "", 1, 100000000).then((res) => {
+      productController.listProduct(1, 25, "", "", 1, 100000000, "").then((res) => {
         setState({
           ...state,
           product: res.listProduct,
@@ -42,7 +42,7 @@ export default function LisProduct() {
   }, []);
   useEffect(() => {
     if (value != undefined && value != '' && value != null) {
-      productController.listProduct(1, 25, value, "", 1, 100000000).then((res) => {
+      productController.listProduct(1, 25, value, "", 1, 100000000, "").then((res) => {
         setState({
           ...state,
           product: res.listProduct,
@@ -50,7 +50,7 @@ export default function LisProduct() {
         });
       });
     } else {
-      productController.listProduct(1, 25, "", "", 1, 100000000).then((res) => {
+      productController.listProduct(1, 25, "", "", 1, 100000000, "").then((res) => {
         setState({
           ...state,
           product: res.listProduct,
@@ -64,7 +64,7 @@ export default function LisProduct() {
   const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
     setPage(value);
     productController
-      .listProduct(value, 25, "", "", 1, 100000000)
+      .listProduct(value, 25, "", "", 1, 100000000, "")
       .then((res) => {
         setState({
           ...state,
@@ -77,7 +77,7 @@ export default function LisProduct() {
   const setOrder = (orderby: string) => {
 
     if (orderby === "" || value == undefined && value == '' && value == null) {
-      productController.listProduct(1, 25, '', "", 1, 100000000).then((res) => {
+      productController.listProduct(1, 25, '', "", 1, 100000000, "").then((res) => {
         setState({
           ...state,
           product: res.listProduct,
@@ -87,7 +87,7 @@ export default function LisProduct() {
     } else {
 
       productController
-        .listProduct(1, 25, value, orderby, 1, 100000000)
+        .listProduct(1, 25, value, orderby, 1, 100000000, "")
         .then((res) => {
           console.log("data", res);
 
@@ -100,11 +100,22 @@ export default function LisProduct() {
     }
 
   };
-
+  const getIdBrand = (id: string) => {
+    if (id != '') {
+      productController.listProduct(1, 25, "", "", 1, 100000000, id).then((res) => {
+        console.log(res);
+        setState({
+          ...state,
+          product: res.listProduct,
+          countPage: res.totalPage,
+        });
+      });
+    }
+  }
   return (
     <div>
       <SlideHome />
-      <Brand value={state.brands} />
+      <Brand getIdBrand={getIdBrand} value={state.brands} />
       <Filter handleAddrTypeChange={setOrder} />
       <div className="container fixPagination">
         <Stack

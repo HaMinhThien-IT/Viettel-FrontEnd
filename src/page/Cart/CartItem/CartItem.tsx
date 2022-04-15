@@ -4,13 +4,14 @@ import { IoMdRemoveCircle } from 'react-icons/io';
 import { listCartItem } from '../../../model/Cart';
 import { formatMoney } from '../../../helper';
 type props = {
-    itemCart : listCartItem
+    itemCart: listCartItem
+
 }
-export default function CartItem(props:props) {
-   
+export default function CartItem(props: props) {
+
     return (
         <div className='containerCart'>
-            
+
             <div className="containerCartItem">
                 <div className="imageProductCartItem">
                     <img src={props.itemCart.image} alt="" />
@@ -21,10 +22,10 @@ export default function CartItem(props:props) {
                 <div className="actionAndPrice">
                     <IoMdRemoveCircle />
                     <div className="beforePriceProduct">
-                        {formatMoney(props.itemCart.price+1000)}đ
+                        {formatMoney(props.itemCart.price + 1000)}đ
                     </div>
                     <div className="afterPriceProduct">
-                    {formatMoney(props.itemCart.price)}đ
+                        {formatMoney(props.itemCart.price)}đ
                     </div>
                     <div className="updateQuantityProductCart">
                         <button className="updateQuantity">-</button>
@@ -36,30 +37,30 @@ export default function CartItem(props:props) {
             <div className="totalPrice">
                 <div className="pricePrice">
                     <p className="titile">
-                    Tạm tính
+                        Tạm tính
                     </p>
                     <div className="prices">
-                    {formatMoney(props.itemCart.price*props.itemCart.quantity_order)}đ
+                        {formatMoney(props.itemCart.price * props.itemCart.quantity_order)}đ
                     </div>
                 </div>
                 <div className="pricePrice">
                     <p className="titile">
-                    Khuyến mãi
+                        Khuyến mãi
                     </p>
                     <div className="prices">
-                   0đ
+                        0đ
                     </div>
                 </div>
                 <div className="pricePrice">
                     <p className="titile">
-                    Phí vận chuyển
+                        Phí vận chuyển
                     </p>
                     <div className="prices">
-                    80.000đ
+                        80.000đ
                     </div>
                 </div>
             </div>
-           
+
         </div>
     );
 }

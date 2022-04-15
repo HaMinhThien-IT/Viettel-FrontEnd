@@ -5,8 +5,8 @@ import { ProductLine, ProductLines, Products } from "../model/Product";
 let localHost: string = 'http://localhost:3002'
 
 class ProductController {
-    listProduct(page: number, pagesize: number, name: string,orderBy:string,from:number ,to:number) {
-        return authAxios.post(`${localHost}/listProduct`, { page,pagesize, name ,orderBy,from,to }).then(res => {
+    listProduct(page: number, pagesize: number, name: string,orderBy:string,from:number ,to:number,trademark_id:string) {
+        return authAxios.post(`${localHost}/listProduct`, { page,pagesize, name ,orderBy,from,to,trademark_id }).then(res => {
             return res.data
         })
     }

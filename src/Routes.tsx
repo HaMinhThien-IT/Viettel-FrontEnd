@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Boxhehe from "./components/Boxhehe";
 import Test from "./components/test";
 import Brand from "./page/Admin/brands/BrandTable";
 import ListBrand from "./page/Admin/brands/ListBrand";
@@ -108,21 +109,19 @@ export default function RoutesComponent() {
               <Route
                 path="/cart"
                 element={
-                  <AuthLayout>
-                    <ClientLayout>
-                      <Cart />
-                    </ClientLayout>
-                  </AuthLayout>
+
+                  <ClientLayout>
+                    <Cart />
+                  </ClientLayout>
+
                 }
               ></Route>
               <Route
                 path="/checkout"
                 element={
-                  <AuthLayout>
-                    <ClientLayout>
-                      <ListCheckout />
-                    </ClientLayout>
-                  </AuthLayout>
+
+                  <Boxhehe />
+
                 }
               ></Route>
             </Routes>

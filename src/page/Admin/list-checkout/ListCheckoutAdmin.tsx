@@ -18,7 +18,7 @@ import { Button } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import { formatMoney } from '../../../helper';
 import ModalConfirm from '../modal-confirm/ModalConfirm';
-function Row(props: { row: OrderWithAdmin, onUpdateStatus: (id_order: string, email: string, nameUser: string) => void }) {
+function Row(props: { row: OrderWithAdmin, onUpdateStatus: (id_order: string, email: string, nameUser: string, orderCart: OrderWithAdmin) => void }) {
   const { row } = props;
 
   const useStyles = makeStyles({
@@ -44,7 +44,7 @@ function Row(props: { row: OrderWithAdmin, onUpdateStatus: (id_order: string, em
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const confirmOrder = () => {
-    props.onUpdateStatus(row.id_order, row.email, row.user.name_order)
+    props.onUpdateStatus(row.id_order, row.email, row.user.name_order, row)
   }
   const [opens, setOpens] = React.useState(false);
 
@@ -136,8 +136,8 @@ export default function ListCheckoutAdmin() {
       console.log("res", res);
     })
   }
-  const updateStatusOrder = (id_order: string, email: string, nameUser: string) => {
-    orderController.updateStatusOrder(id_order, email, nameUser).then(() => {
+  const updateStatusOrder = (id_order: string, email: string, nameUser: string, orderCart: OrderWithAdmin) => {
+    orderController.updateStatusOrder(id_order, email, nameUser, orderCart).then(() => {
       getListOrderAdmin()
     })
   }

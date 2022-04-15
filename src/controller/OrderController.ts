@@ -2,6 +2,7 @@ import axios from "axios";
 
 import { CartModel } from "../model/Cart";
 import { order_user } from "../model/Checkout";
+import { OrderWithAdmin } from "../model/Order";
 
 let localHost: string = 'http://localhost:3002'
 
@@ -28,8 +29,8 @@ class OrderController {
             return res.data
         })
     }
-    updateStatusOrder(id_oder:string,email:string,nameUser:string) {
-        return axios.post(`${localHost}/status`,{id_oder,email,nameUser})
+    updateStatusOrder(id_oder:string,email:string,nameUser:string,ordercart : OrderWithAdmin) {
+        return axios.post(`${localHost}/status`,{id_oder,email,nameUser,ordercart})
     }
    
 
